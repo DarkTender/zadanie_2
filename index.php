@@ -66,8 +66,17 @@
     <section class="container">
       <div class="row">
         <div class="col-50">
-          <h2>Mollit cupidatat velit quis irure non eiusmod culpa cillum velit magna est aliquip.</h2>
-        </div>
+        <?php
+          $hour = date(format: 'H');
+          if ($hour < 12){
+            echo "<h3>Dobré ráno</h3>";
+          } elseif ($hour < 18){
+            echo "<h3>Dobrý deň</h3>";
+          } else{
+            echo "<h3>Dobrý večer</h3>";
+          }
+          ?>
+      </div>
         <div class="col-50">
           <p>Nulla dolore sit esse pariatur culpa sint nulla fugiat nulla ut. Sit adipisicing fugiat id consequat qui
             est. Nulla ea aliquip culpa nulla mollit do excepteur ex ullamco consequat tempor consectetur. Tempor et ea
@@ -93,9 +102,9 @@
       </div>
       <div class="col-25 text-left">
         <h4>Kontaktujte nás</h4>
-        <p><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:livia.kelebercova@gmail.com">
-              livia.kelebercova@gmail.com</a></i></p>
-        <p><i class="fa fa-phone" aria-hidden="true"><a href="tel:0909500600"> 0909500600</a></i></p>
+        <p><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:dusan.savrda@xxxx.com">
+        dusan.savrda@xxxx.com</a></i></p>
+        <p><i class="fa fa-phone" aria-hidden="true"><a href="tel:090123456789"> 090123456789</a></i></p>
       </div>
       <div class="col-25">
         <h4>Rýchle odkazy</h4>
