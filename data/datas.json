@@ -1,0 +1,12 @@
+{
+    "text_banner":{
+        "portfolio1.jpg":"Prvý nadpis",
+        "portfolio2.jpg":"Druhý nadpis",
+        "portfolio3.jpg":"Tretí nadpis",
+        "portfolio4.jpg":"Štvrtý nadpis",
+        "portfolio5.jpg":"Piaty nadpis",
+        "portfolio6.jpg":"Šiesty nadpis",
+        "portfolio7.jpg":"Siedmy nadpis",
+        "portfolio8.jpg":"Osmy nadpis"
+    }
+}
