@@ -12,39 +12,26 @@
     </head>
     <body>
         <?php include "parts/header.php" ?>
-        <?php
-$projekty = [
-    "Web stránka 1",
-    "Web stránka 2",
-    "Web stránka 3",
-    "Web stránka 4",
-    "Web stránka 5",
-    "Web stránka 6",
-    "Web stránka 7",
-    "Web stránka 8"
-];
-?>
-
+        
         <main>
             <section class="banner">
                 <div class="container text-white">
                     <h1>Portfólio</h1>
                 </div>
+            
             </section>
               <section class="container">
               <div class="row">
-<?php
-foreach ($projekty as $index => $projekt) {
-    echo "<div class='col-25 portfolio text-white text-center' id='portfolio-" . ($index+1) . "'>";
-    echo $projekt;
-    echo "</div>";
-}
-?>
-</div>
+            
+            <?php include "parts/functions.php";
+                generateSlides("img/portfolio");
+            ?>
+
+            </div>
             </section>   
 
         </main>
-<?php include "parts/footer.php" ?>
+        <?php include "parts/footer.php" ?>
     <script src="js/menu.js"></script>
     </body>
 </html>
